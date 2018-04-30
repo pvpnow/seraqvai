@@ -1,0 +1,69 @@
+MarketButton < ShopButton
+  text-offset: 50 -20
+MarketButtonSale < ShopButtonSale
+  text-offset: 50 -20
+MarketPrize < ShopPrize
+  margin-left: 50
+
+Panel
+  VerticalScrollBar
+    id: scrollBar
+    step: 50
+    pixels-scroll: true
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+
+  ScrollablePanel
+    vertical-scrollbar: scrollBar
+    anchors.fill: parent
+    margin-right: 15     
+
+    MarketButton
+      text: Charizardite X
+      icon: /images/game/shop/poke/charizardx
+      @onClick:  g_game.talk("#Charizarditex#")
+      MarketPrize
+        text: 10
+
+    MarketButton
+      text: Blastoisinite X
+      icon: /images/game/shop/poke/blastoisex
+      @onClick:  g_game.talk("Em Manutençao") 
+      MarketPrize
+        text: Em Manutencao
+
+    MarketButton
+      text: Alakazite X
+      icon: /images/game/shop/poke/alakazamx
+      @onClick:  g_game.talk("#Em Manutençao#")
+      MarketPrize
+        text: Em Manutencao
+
+    MarketButton
+      text: Gengarite X
+      icon: /images/game/shop/poke/gengarx
+      @onClick:  g_game.talk("#Em Manutençao#")
+      MarketPrize
+        text: Em Manutencao
+
+    MarketButton
+      text: Venusaurite X
+      icon: /images/game/shop/poke/venusaurx
+      @onClick:  g_game.talk("#Em Manutençao#")
+      MarketPrize
+        text: Em Manutencao
+
+    MarketButton
+      text: Slowbronite X
+      icon: /images/game/shop/poke/slowbrox
+      @onClick:  g_game.talk("#slx#")
+      MarketPrize
+        text: 10
+
+    MarketButton
+      text: Tyranitarite X
+      icon: /images/game/shop/poke/tyranitarx
+      @onClick:  g_game.talk("#Em Manutençao#")
+      MarketPrize
+        text: Em Manutencao

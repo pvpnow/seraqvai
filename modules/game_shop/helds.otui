@@ -1,0 +1,76 @@
+MarketButton < ShopButton
+  text-offset: 50 -20
+MarketButtonSale < ShopButtonSale
+  text-offset: 50 -20
+MarketPrize < ShopPrize
+  margin-left: 50
+
+Panel
+  VerticalScrollBar
+    id: scrollBar
+    step: 50
+    pixels-scroll: true
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+
+  ScrollablePanel
+    vertical-scrollbar: scrollBar
+    anchors.fill: parent
+    margin-right: 15
+
+    MarketButton
+      text: Misterioso Held T1
+      icon: /images/game/shop/market/held1
+      @onClick:  g_game.talk("#h1#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 1
+
+    MarketButton
+      text: Misterioso Held T2
+      icon: /images/game/shop/market/held2
+      @onClick:  g_game.talk("#h2#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 2
+
+    MarketButton
+      text: Misterioso Held T3
+      icon: /images/game/shop/market/held3
+      @onClick:  g_game.talk("#h3#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 3
+
+    MarketButton
+      text: Misterioso Held T4
+      icon: /images/game/shop/market/held4
+      @onClick:  g_game.talk("#h4#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 4
+
+    MarketButton
+      text: Misterioso Held T5
+      icon: /images/game/shop/market/held5
+      @onClick:  g_game.talk("#h5#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Misterioso Held T6
+      icon: /images/game/shop/market/held6
+      @onClick:  g_game.talk("#h6#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 6
+
+    MarketButton
+      text: Misterioso Held T7
+      icon: /images/game/shop/market/held7
+      @onClick:  g_game.talk("#h7#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 7

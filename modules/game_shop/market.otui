@@ -1,0 +1,52 @@
+MarketButton < ShopButton
+  text-offset: 50 -20
+MarketButtonSale < ShopButtonSale
+  text-offset: 50 -20
+MarketPrize < ShopPrize
+  margin-left: 50
+
+Panel
+  VerticalScrollBar
+    id: scrollBar
+    step: 50
+    pixels-scroll: true
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+
+  ScrollablePanel
+    vertical-scrollbar: scrollBar
+    anchors.fill: parent
+    margin-right: 15
+
+    MarketButton
+      text: Boost Stone X5
+      icon: /images/game/shop/market/boost stone
+      @onClick:  g_game.talk("#boost#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 1
+
+    MarketButton
+      text: Vip 30 Days
+      icon: /images/game/shop/market/vip
+      @onClick:  g_game.talk("#vp30#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 4
+
+    MarketButton
+      text: Vip 60 Days
+      icon: /images/game/shop/market/vip
+      @onClick:  g_game.talk("#vp60#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 7
+
+    MarketButton
+      text: Vip 90 Days
+      icon: /images/game/shop/market/vip
+      @onClick:  g_game.talk("#vp90#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 12

@@ -1,0 +1,92 @@
+MarketButton < ShopButton
+  text-offset: 50 -20
+MarketButtonSale < ShopButtonSale
+  text-offset: 50 -20
+MarketPrize < ShopPrize
+  margin-left: 50
+
+Panel
+  VerticalScrollBar
+    id: scrollBar
+    step: 50
+    pixels-scroll: true
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+
+  ScrollablePanel
+    vertical-scrollbar: scrollBar
+    anchors.fill: parent
+    margin-right: 15     
+
+    MarketButton
+      text: Marowaktite
+      icon: /images/game/shop/poke/marowak
+      @onClick:  g_game.talk("#m#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Pinsirite
+      icon: /images/game/shop/poke/pinsir
+      @onClick:  g_game.talk("#ps#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Steelixite
+      icon: /images/game/shop/poke/steelix
+      @onClick:  g_game.talk("#ste#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Slowbronite
+      icon: /images/game/shop/poke/slowbro
+      @onClick:  g_game.talk("#sl#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Charizardite Y
+      icon: /images/game/shop/poke/charizardy
+      @onClick:  g_game.talk("#cy#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Houndoominite
+      icon: /images/game/shop/poke/houndoom
+      @onClick:  g_game.talk("#h#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Ampharosite
+      icon: /images/game/shop/poke/ampharos
+      @onClick:  g_game.talk("#amp#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Wobbuffetize
+      icon: /images/game/shop/poke/wobbuffet
+      @onClick:  g_game.talk("#w#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 7
+
+    MarketButton
+      text: Aerodactylite
+      icon: /images/game/shop/poke/aerodactyl
+      @onClick:  g_game.talk("#ae#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 7

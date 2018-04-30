@@ -1,0 +1,100 @@
+MarketButton < ShopButton
+  text-offset: 50 -20
+MarketButtonSale < ShopButtonSale
+  text-offset: 50 -20
+MarketPrize < ShopPrize
+  margin-left: 50
+
+Panel
+  VerticalScrollBar
+    id: scrollBar
+    step: 50
+    pixels-scroll: true
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+
+  ScrollablePanel
+    vertical-scrollbar: scrollBar
+    anchors.fill: parent
+    margin-right: 15     
+
+    MarketButton
+      text: Ditto
+      icon: /images/game/shop/market/ditto
+      @onClick:  g_game.talk("#buyditto#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Shiny Ditto
+      icon: /images/game/shop/market/shiny ditto
+      @onClick:  g_game.talk("#buyditt#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 15
+
+    MarketButton
+      text: Blastoisinite
+      icon: /images/game/shop/poke/blastoise
+      @onClick:  g_game.talk("#Blastoisinite#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Alakazite
+      icon: /images/game/shop/poke/alakazam
+      @onClick:  g_game.talk("#Alakazite#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Gengarite
+      icon: /images/game/shop/poke/gengar
+      @onClick:  g_game.talk("#g#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Tyranitarite
+      icon: /images/game/shop/poke/tyranitar
+      @onClick:  g_game.talk("#t#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Kankhaskanite
+      icon: /images/game/shop/poke/Kankhaskan
+      @onClick:  g_game.talk("#k#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Pidgeotile
+      icon: /images/game/shop/poke/pidgeot
+      @onClick:  g_game.talk("#p#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Venusaurite
+      icon: /images/game/shop/poke/venusaur
+      @onClick:  g_game.talk("#v#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
+
+    MarketButton
+      text: Scizorite
+      icon: /images/game/shop/poke/scizor
+      @onClick:  g_game.talk("#sc#")
+      icon-offset: 6 0
+      MarketPrize
+        text: 5
